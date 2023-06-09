@@ -8,12 +8,13 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
   <div className="app-container">
   <div className="top-row">
     <div className="gauge-container">
-      <Test rating={75}/>
+      <Test rating={75} />
       <div className="gauge-heading">
-        <GaugeHeading text="Gauge Heading 1" rating={75}/>
+        <GaugeHeading text="Gauge Heading 1" rating={75} />
       </div>
     </div>
     <div className="gauge-container">
