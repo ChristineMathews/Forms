@@ -1,0 +1,13 @@
+.gauge-heading-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .rating {
+    margin-top: 8px;
+  }
+  
+  .gauge-heading-container:hover .rating {
+    display: none;
+  }
+  
