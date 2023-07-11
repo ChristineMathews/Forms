@@ -48,3 +48,22 @@ const GaugeHeading = ({ text, rating }) => {
 };
 
 export default GaugeHeading;
+
+//       {!showFeedback && <p className="rating">{rating}%</p>}
+//       {showFeedback && (
+//         <div className="feedback-container">
+//           {feedbacks.map((feedback, idx) => (
+//             <p
+//               key={idx}
+//               className={`feedback ${feedback === selectedFeedback ? 'selected' : ''}`}
+//               onClick={() => handleFeedbackClick(feedback)}
+//             >
+//               {index === idx ? feedback[`Comment${index + 1}`] : null}
+//             </p>
+//           ))}
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
