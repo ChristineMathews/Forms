@@ -46,7 +46,10 @@ root.render(
       </div>
     </div>
   </div>
+  <div className='feedbackblocks'>
   <FeedbackBlocks/>
+  </div>
+  
 </div>
 );
 
