@@ -16,7 +16,7 @@ const LoginScreen = ({ onLogin }) => {
   };
 
   return (
-    <div className="login-container">
+    <div className={`login-container ${loginStatus === 'accessDenied' ? 'shake' : ''}`}>
       <div className="login-card">
         <h2>Login</h2>
         {loginStatus === 'accessDenied' && <p className="error-message">Access Denied</p>}
