@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
+import { FaInfoCircle } from 'react-icons/fa';
 const GaugeHeading = ({ text, rating }) => {
   const [showFeedback, setShowFeedback] = useState(false);
   const [feedback, setFeedback] = useState('');
@@ -36,6 +36,9 @@ const GaugeHeading = ({ text, rating }) => {
         onMouseLeave={handleMouseLeave}
       >
         {text}
+        <sup>
+                  <FaInfoCircle className="info-icon" size={16} />
+                </sup>
       </h1>
       {!showFeedback && <p className="rating">{rating}%</p>}
       {showFeedback && (
