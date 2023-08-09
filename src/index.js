@@ -9,7 +9,7 @@ import FeedbackBlocks from './FeedbackBlocks';
 import MultiPartForm from './MultiPartForm';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  
+  <div>
   <div className="app-container">
   <div className="top-row">
     {/* <MultiPartForm/> */}
@@ -49,7 +49,7 @@ root.render(
   <div className='feedbackblocks'>
   <FeedbackBlocks/>
   </div>
-  
+  </div>
 </div>
 );
 
