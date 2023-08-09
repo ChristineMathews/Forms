@@ -26,3 +26,18 @@ const LoginPage = ({ onTeamSelect }) => {
 
 export default LoginPage;
 
+
+const App = () => {
+    const [selectedTeam, setSelectedTeam] = useState(null);
+
+    const handleTeamSelect = (team) => {
+        setSelectedTeam(team);
+    };
+
+    return (
+        <Router>
+            <Switch>
+                <Route exact path="/">
+                    {selectedTeam ? <Redirect to="/main" /> : <LoginPage onTeamSelect={handleTeamSelect} />}
+                </Route>
+                <Route path="/main" component={MainPage} />
