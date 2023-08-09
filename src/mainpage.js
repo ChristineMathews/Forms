@@ -1,11 +1,14 @@
+// LoginPage.js
 import React, { useState } from 'react';
-import LoginForm from '../components/LoginForm';
+import LoginScreen from '../components/LoginScreen';
 import TeamDropdown from '../components/TeamDropdown';
 
 const LoginPage = ({ onTeamSelect }) => {
     const [teams, setTeams] = useState(null);
 
-    const handleLogin = (fetchedTeams) => {
+    const handleLogin = () => {
+        // Normally, you'd authenticate here, then fetch the teams.
+        const fetchedTeams = ['Team A', 'Team B', 'Team C']; // Mock data for this example
         setTeams(fetchedTeams);
     };
 
@@ -13,7 +16,7 @@ const LoginPage = ({ onTeamSelect }) => {
         <div>
             <h1>Login Page</h1>
             {!teams ? (
-                <LoginForm onLogin={handleLogin} />
+                <LoginScreen onLogin={handleLogin} />
             ) : (
                 <TeamDropdown teams={teams} onSelect={onTeamSelect} />
             )}
@@ -22,3 +25,4 @@ const LoginPage = ({ onTeamSelect }) => {
 };
 
 export default LoginPage;
+
